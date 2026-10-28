@@ -1,0 +1,122 @@
+@import "tailwindcss";
+
+:root {
+  /* Royal Vedic Palette */
+  --navy-deep: #0B192C;
+  --navy-dark: #1E3E62;
+  --navy-light: #2B4C7E;
+  
+  --gold-primary: #D4AF37;
+  --gold-light: #F3E5AB;
+  --gold-rich: #C5A028;
+  --gold-accent: #E5C158;
+
+  --cream-bg: #FCFBF7;
+  --cream-card: #F7F4EB;
+  --cream-dark: #EFE9D9;
+
+  --text-primary: #0A192F;
+  --text-secondary: #4A5568;
+  --text-muted: #718096;
+
+  --border-gold: rgba(212, 175, 55, 0.3);
+  --border-subtle: rgba(212, 175, 55, 0.15);
+
+  --font-odia: 'Noto Sans Oriya', 'Kalinga', 'Arial Unicode MS', sans-serif;
+}
+
+body {
+  background-color: var(--cream-bg);
+  color: var(--text-primary);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+/* Sacred Vedic Aesthetic Gradients & Accents */
+.bg-vedic-navy {
+  background-color: var(--navy-deep);
+}
+
+.bg-vedic-navy-dark {
+  background-color: #060e1a;
+}
+
+.bg-vedic-card {
+  background-color: #ffffff;
+  border: 1px solid var(--border-subtle);
+}
+
+.bg-vedic-cream {
+  background-color: var(--cream-card);
+}
+
+.text-gold {
+  color: var(--gold-primary);
+}
+
+.text-gold-light {
+  color: var(--gold-light);
+}
+
+.text-navy {
+  color: var(--navy-deep);
+}
+
+.border-gold {
+  border-color: var(--border-gold);
+}
+
+.border-gold-solid {
+  border-color: var(--gold-primary);
+}
+
+/* Sacred Mandala Subtle Motif */
+.bg-mandala-pattern {
+  background-image: radial-gradient(var(--border-subtle) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* North Indian Kundli Chart Drawing */
+.kundli-diamond {
+  position: relative;
+  width: 100%;
+  max-width: 440px;
+  aspect-ratio: 1 / 1;
+  margin: 0 auto;
+  border: 2px solid var(--gold-primary);
+  background-color: #ffffff;
+}
+
+/* Odia Typography Enhancement */
+.font-odia {
+  font-family: var(--font-odia);
+  line-height: 1.6;
+}
+
+/* Buttons */
+.btn-gold {
+  background: linear-gradient(135deg, #D4AF37 0%, #B89726 100%);
+  color: #0B192C;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out;
+}
+.btn-gold:hover {
+  background: linear-gradient(135deg, #E5C158 0%, #C5A028 100%);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 14px rgba(212, 175, 55, 0.35);
+}
+
+.btn-navy {
+  background: linear-gradient(135deg, #1E3E62 0%, #0B192C 100%);
+  color: #F3E5AB;
+  border: 1px solid var(--border-gold);
+  font-weight: 600;
+  transition: all 0.2s ease-in-out;
+}
+.btn-navy:hover {
+  background: linear-gradient(135deg, #2B4C7E 0%, #152942 100%);
+  color: #ffffff;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 14px rgba(11, 25, 44, 0.4);
+}
